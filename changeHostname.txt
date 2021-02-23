@@ -1,0 +1,8 @@
+1. First we need to be a super user:
+	sudo su
+2. Now we will check the hostname:
+	hostname
+3. Changing the Hostname:
+	hostname <required_name>
+4. Verifying the changes:
+	hostname
