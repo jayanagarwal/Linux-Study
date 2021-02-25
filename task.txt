@@ -1,0 +1,16 @@
+create 4 user with name tushar, nana, maulik, jaya
+set the expiry of password to 90 days
+create group marketing add tushar nana
+create group it add maulik jaya
+create group as capgemini and add all user as their secondary group
+
+try the input redirection to set the password for all the user
+make sure every user get the home directory
+
+add a new user with any name and the user id for this one should be 2001
+then also set the shell for that user be {sh shell}
+add this user into a existing group name capgemini give its comment while creating user as "Capgemini employee for Big Data"
+
+
+
+(single command) -> dont use semicolon and & operator.	

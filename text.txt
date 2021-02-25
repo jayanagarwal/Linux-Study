@@ -1,0 +1,5 @@
+Lets find out the files present inside the destination folder or the subfolder present inside it make sure the files are created by the user you are currently logged in.
+
+You need to create backup and make sure the location where you will create the folder
+	-> doesnt exist
+	-> so if it doesnt exist create the folder and find the 		   files and copy the files in a single command
