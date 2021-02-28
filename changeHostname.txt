@@ -1,3 +1,6 @@
+we take help using man hostname.
+
+Then
 1. First we need to be a super user:
 	sudo su
 2. Now we will check the hostname:

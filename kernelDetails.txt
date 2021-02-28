@@ -5,3 +5,11 @@
 .0 - minor revision level
 
 -43 - level of patches and bug fixes
+
+
+
+__________________________________
+Getting the details:
+1. Take help using man kernel.
+2. uname -r
+3. we will get details as output.

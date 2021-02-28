@@ -1,0 +1,30 @@
+Q.Copy the files
+- create three folder in a particular location as /tmp/data/bolly  /tmp/data/holly   /tmp/data/tolly   [only 1 command]
+- go at /etc and copy all the files you have starting with name a,b,c or d  , take that data to the /tmp/data location
+- Take the above files, if the file name starts with a or b take to bolly c or d   -> holly
+- Take those file which are bigger in amount in size(  file > 40M) -> tolly
+- You can create the tar file of each folder {bolly, holly, tolly} in a desktop folder named as "MoviesData" & make sure the tar files are
+present with its respective names
+
+
+Answer: 
+1. We  make dir data in tmp.
+   jayan@jayan-VirtualBox:~$ sudo mkdir /tmp/data
+
+- create three folder in a particular location as /tmp/data/bolly  /tmp/data/holly   /tmp/data/tolly   [only 1 command]
+2. jayan@jayan-VirtualBox:~$ sudo mkdir /tmp/data/bolly /tmp/data/holly /tmp/data/tolly
+
+- go at /etc and copy all the files you have starting with name a,b,c or d  , take that data to the /tmp/data location
+3. jayan@jayan-VirtualBox:~$ sudo find /etc/ -type f -name [abcd]* -exec cp {} /tmp/data/ \;
+
+-Take the above files, if the file name starts with a or b -> bolly && c or d   -> holly
+4. jayan@jayan-VirtualBox:~$ sudo cp -r /tmp/data/[ab]* /tmp/data/bolly/ && cp -r /tmp/data/[cd]* /tmp/data/holly/
+{Not actually Working}
+
+- Take those file which are bigger in amount in size(  file > 40M) -> tolly
+5. jayan@jayan-VirtualBox:~$ find /tmp/data/ -type f -size +40000k -exec cp {} /tmp/data/tolly/ \;
+
+- You can create the tar file of each folder {bolly, holly, tolly} in a desktop folder named as "MoviesData" & make sure the tar files are
+present with its respective names
+6. sudo tar -cvf MoviesData/bolly.tar /tmp/data/bolly && tar -cvf MoviesData/holly.tar /tmp/data/holly && tar -cvf MoviesData/tolly.tar /tmp/data/tolly
+
